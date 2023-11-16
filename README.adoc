@@ -1,0 +1,15 @@
+= Settings Directory README
+
+== .bashrc
+* `.bashrc` - configure the Bash shell environment, setting environment variables, aliases, and functions.
+
+== .vimrc
+* `.vimrc` - configure the Vim text editor
+
+== ipynb_process.sh
+* `ipynb_process.sh` - processJupyter Notebook (`.ipynb`) files int html.
+
+== makefile_TeX
+* `makefile_TeX` - file is a Makefile specifically designed for compiling TeX (LaTeX) documents
+
+For more information on how to use or modify these files, refer to the individual file contents or the respective documentation for each tool or application they are associated with.

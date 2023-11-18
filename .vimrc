@@ -1,12 +1,13 @@
-" ==============
-" .VIMRC for ML
-" ==============
+" ================
+" .VIMRC (MLBKRM)
+" ================
 " Plug-Ins
 " =========
 " Install
 " -------
 call plug#begin()
 Plug 'ap/vim-buftabline' "A well-integrated, low-configuration buffer list that lives in the tabline
+Plug 'github/copilot.vim' "GitHub Copilot for vim
 Plug 'omnisharp/omnisharp-vim' "IDE like abilities for C#.
 Plug 'mattn/emmet-vim' "html style abbreviation support
 Plug 'vim-latex/vim-latex' "Lated in Vim
@@ -18,6 +19,7 @@ Plug 'HerringtonDarkholme/yats.vim' "TS Syntax
 call plug#end()
 " Settings
 " --------
+inoremap <silent><expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 let g:NERDTreeIgnore = ['^node_modules$']
 let g:vimspector_enable_mappings = 'HUMAN'
 let g:coc_global_extensions = ['coc-snippets','coc-pairs','coc-tsserver','coc-eslint','coc-prettier','coc-json']

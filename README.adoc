@@ -6,10 +6,22 @@
 == .vimrc
 * `.vimrc` - configure the Vim text editor
 
+== gruvbox.txt
+* `gruvbox.txt` - color scheme for Vim
+
 == ipynb_process.sh
 * `ipynb_process.sh` - processJupyter Notebook (`.ipynb`) files int html.
 
+== lynx_bookmarks.html
+* `lynx_bookmarks.html` - bookmarks for the Lynx web browser
+
 == makefile_TeX
-* `makefile_TeX` - file is a Makefile specifically designed for compiling TeX (LaTeX) documents
+* `makefile_TeX` - Makefile specifically designed for compiling TeX (LaTeX) documents
+		`make -f <pth>/makefile_pdfLaTeX PDF=<pth>/<file>.pdf`
+		`make clean -f <pth>/makefile_pdfLaTeX PDF=<pth>/<file>.pdf`
+		`less ~/workspace/out/<file>.pdf`
+
+== mathjax.html
+* `mathjax.html` - template for using MathJax in HTML documents
 
 For more information on how to use or modify these files, refer to the individual file contents or the respective documentation for each tool or application they are associated with.

@@ -1,0 +1,34 @@
+# Generate your PDF
+PDF := $(PDF)
+SRCDIR := $(dir $(PDF))
+BASENAME := $(basename $(notdir $(PDF)))
+OUTDIR := ~/Downloads/
+
+# Define the .tex source file
+TEXFILE := $(SRCDIR)$(BASENAME).tex
+
+# Build rule
+all: $(PDF)
+	@echo 'Build complete. Cleaning up...'
+	@$(MAKE) clean
+	@if make build; then \
+		echo "Build succeeded. Cleaning up..."; \
+		make clean; \
+	else \
+		echo "Build failed."; \
+	fi
+
+# Rule to make the PDF
+$(PDF): $(TEXFILE)
+	@echo 'Making PDF from $(TEXFILE)'
+	cd $(SRCDIR) && xelatex $(BASENAME).tex
+	cd $(SRCDIR) && bibtex $(BASENAME)
+	cd $(SRCDIR) && xelatex $(BASENAME).tex
+	cd $(SRCDIR) && xelatex $(BASENAME).tex
+
+# Clean rule
+clean:
+	mv $(SRCDIR)*.pdf $(OUTDIR)
+	rm -f $(SRCDIR)*.aux $(SRCDIR)*.bbl $(SRCDIR)*.blg $(SRCDIR)*.log $(SRCDIR)*.out
+	rm -f $(SRCDIR)*.o errors.err
+	rm -f $(SRCDIR)BUILD

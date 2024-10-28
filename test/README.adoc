@@ -1,0 +1,5 @@
+
+'''bash
+spack load hpl openblas openmpi
+bash ./test_hpl.sh
+'''

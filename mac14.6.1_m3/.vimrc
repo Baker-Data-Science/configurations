@@ -6,11 +6,12 @@
 " Install
 " -------
 call plug#begin()
+Plug 'tpope/vim-sensible' "Sensible settings for vim
 Plug 'ap/vim-buftabline' "A well-integrated, low-configuration buffer list that lives in the tabline
 Plug 'github/copilot.vim' "GitHub Copilot for vim
-Plug 'omnisharp/omnisharp-vim' "IDE like abilities for C#.
-Plug 'mattn/emmet-vim' "html style abbreviation support
-Plug 'vim-latex/vim-latex' "Lated in Vim
+"Plug 'omnisharp/omnisharp-vim' "IDE like abilities for C#.
+"Plug 'mattn/emmet-vim' "html style abbreviation support
+Plug 'vim-latex/vim-latex' "LaTeX in Vim
 Plug 'neoclide/coc.nvim', {'branch':'release'} "conquerer of completion
 Plug 'puremourning/vimspector' "debug
 Plug 'preservim/nerdtree' "tree directory

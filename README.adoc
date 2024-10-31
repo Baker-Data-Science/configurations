@@ -1,0 +1,35 @@
+= Configurations
+
+A set of configuration files for various tools and applications across a variety of platforms.
+
+== .*rc
+* `.bashrc` - configure the Bash shell environment, setting environment variables, aliases, and functions.
+* `.zshrc` - configure the Zsh shell environment, setting environment variables, aliases, and functions.
+* `.vimrc` - configure the Vim text editor environment, setting options, key mappings, and plugins.
+* `.tmux.conf` - configure the Tmux terminal multiplexer environment, setting options, key mappings, and plugins.
+
+== spack-*.yaml
+* `spack-alignment.yaml` - Spack configuration file for the Alignment project.
+* `spack-hydragnn.yaml` - Spack configuration file for the HydraGNN project.
+
+== .git*
+* `.gitconfig` - configure the Git version control system environment, setting options, aliases, and user information.
+* `.gitignore` - specify files and directories to ignore in Git repositories.
+
+== makefile_TeX
+* `makefile_pdfLaTeX` - Makefile specifically designed for compiling pdfLaTeX (LaTeX) documents
+		`make -f <pth>/makefile_pdfLaTeX PDF=<pth>/<file>.pdf`
+		`make clean -f <pth>/makefile_pdfLaTeX PDF=<pth>/<file>.pdf`
+		`less ~/workspace/out/<file>.pdf`
+* `makefile_XeLaTeX` - Makefile specifically designed for compiling XeLaTeX (XeTeX) documents
+		`make -f <pth>/makefile_XeLaTeX PDF=<pth>/<file>.pdf`
+		`make clean -f <pth>/makefile_XeLaTeX PDF=<pth>/<file>.pdf`
+		`less ~/workspace/out/<file>.pdf`
+
+
+== other
+* `gruvbox.txt` - color scheme for Vim
+* `mathjax.html` - template for using MathJax in HTML documents
+* `ipynb_process.sh` - processJupyter Notebook (`.ipynb`) files into html.
+
+For more information on how to use or modify these files, refer to the individual file contents or the respective documentation for each tool or application they are associated with.

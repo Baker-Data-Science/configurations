@@ -1,11 +1,11 @@
 export PATH="/opt/homebrew/bin/:$PATH"
 
-# ================
-# .BASHRC (MLBKRM)
-# ================
+# ============================
+# .BASHRC (Baker-Data-Science)
+# ============================
 
 # Formatting
-# =======
+# ==========
 # Interactive
 # ------------
 case $- in

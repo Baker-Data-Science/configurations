@@ -1,0 +1,54 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  # add package specs to the `specs` list
+  specs:
+  - py-torch-geometric
+  - openmpi
+  - py-numpy
+  - py-mpi4py
+  - py-pip
+  - py-trimesh
+  - py-requests
+  - py-pytest
+  - tmux
+  - py-setuptools
+  - rdkit
+  - py-torch-cluster
+  - py-torch-scatter
+  - protobuf
+  - py-tensorboard
+  - py-lightning
+  - py-torchmetrics
+  - py-charset-normalizer
+  - py-huggingface-hub
+  - py-yacs
+  - py-ipdb
+  - python
+  - unzip
+  - py-torch-sparse
+  - py-ase
+  - cuda@12.4
+  - py-torch+cuda cuda_arch=90 ^cuda@12.4.1
+  - py-h5py
+  - adios2
+  - py-adios
+  view: true
+  concretizer:
+    unify: true
+  compilers:
+  - compiler:
+      spec: gcc@11.4.0
+      paths:
+        cc: /usr/bin/gcc
+        cxx: /usr/bin/g++
+        f77: /usr/bin/gfortran
+        fc: /usr/bin/gfortran
+      flags: {}
+      operating_system: linux-ubuntu22.04
+      target: x86_64
+      modules: []
+      environment: {}
+      extra_rpaths: []

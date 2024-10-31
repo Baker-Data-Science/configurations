@@ -98,9 +98,9 @@ export LD_LIBRARY_PATH=/opt/intel/oneapi/mkl/latest/lib/intel64:/opt/intel/oneap
 # --------------------
 nvm use 19.0.0
 
-alias goumds="cd ~/root/workspace/rsrch/UMDS/"
-alias gocodec="cd ~/root/workspace/codec/"
-alias golib="cd ~/root/workspace/lib/"
-alias gorsrch="cd ~/root/workspace/rsrch/"
+alias cdbds="cd ~/root/workspace/reproducibility-project/"
+alias cdcodec="cd ~/root/workspace/codec/"
+alias cdlib="cd ~/root/workspace/lib/"
+alias cdrsrch="cd ~/root/workspace/rsrch/"
 
 . ~/spack/share/spack/setup-env.sh

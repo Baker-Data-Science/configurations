@@ -94,9 +94,9 @@ export FC=/usr/bin/gfortran
 export PATH=/home/justin/nsight-systems/bin:$PATH
 
 
-alias goumds="cd ~/UCLADS/"
-alias gocodec="cd ~/codec/"
-alias golib="cd ~/lib/"
-alias gorsrch="cd ~/rsrch/"
+alias cdumds="cd ~/reproducibility-project/"
+alias cdcodec="cd ~/codec/"
+alias cdlib="cd ~/lib/"
+alias cdrsrch="cd ~/rsrch/"
 
 . ~/spack/share/spack/setup-env.sh

@@ -5,37 +5,37 @@
 spack:
   # add package specs to the `specs` list
   specs:
+  - adios2 #currently broken
+  - cuda@12.4.1 cuda_arch=90
+  - nccl@2.14.3 cuda_arch=90
+  - py-torch-geometric
   - openmpi
   - protobuf
   - py-ase
   - py-charset-normalizer
   - py-huggingface-hub
+  - py-h5py
   - py-ipdb
   - py-lightning
   - py-mpi4py
   - py-numpy
   - py-pip
+  - py-pre-commit
   - py-pytest
+  - py-trimesh
   - py-requests
   - py-setuptools
-  - py-spglib
   - py-tensorboard
-  - cuda@12.4
-  - py-torch+cuda cuda_arch=90 ^cuda@12.4.1
   - py-torch-cluster
-  - py-torch-geometric
-  - py-torch-scatter
   - py-torchmetrics
-  - py-trimesh
+  - py-torch-scatter
+  - py-torch-sparse
+  - py-torch+cuda+nccl
   - py-yacs
   - python
   - rdkit
   - tmux
   - unzip
-  - py-torch-sparse
-  - py-pre-commit
-  - adios2
-  - py-deepspeed
   view: true
   concretizer:
     unify: true

@@ -5,36 +5,35 @@
 spack:
   # add package specs to the `specs` list
   specs:
+  - cuda@12.4.1 cuda_arch=90
+  - nccl@2.14.3 cuda_arch=90
   - py-torch-geometric
   - openmpi
-  - py-numpy
-  - py-mpi4py
-  - py-pip
-  - py-trimesh
-  - py-requests
-  - py-pytest
-  - tmux
-  - py-setuptools
-  - rdkit
-  - py-torch-cluster
-  - py-torch-scatter
   - protobuf
-  - py-tensorboard
-  - py-lightning
-  - py-torchmetrics
+  - py-ase
   - py-charset-normalizer
   - py-huggingface-hub
-  - py-yacs
-  - py-ipdb
-  - python
-  - unzip
-  - py-torch-sparse
-  - py-ase
-  - cuda@12.4
-  - py-torch+cuda cuda_arch=90 ^cuda@12.4.1
   - py-h5py
-  - adios2
-  - py-adios
+  - py-ipdb
+  - py-lightning
+  - py-mpi4py
+  - py-numpy
+  - py-pip
+  - py-pytest
+  - py-trimesh
+  - py-requests
+  - py-setuptools
+  - py-tensorboard
+  - py-torch-cluster
+  - py-torchmetrics
+  - py-torch-scatter
+  - py-torch-sparse
+  - py-torch+cuda+nccl
+  - py-yacs
+  - python
+  - rdkit
+  - tmux
+  - unzip
   view: true
   concretizer:
     unify: true

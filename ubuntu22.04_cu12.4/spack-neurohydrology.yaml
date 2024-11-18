@@ -1,0 +1,52 @@
+spack:
+  specs:
+    - cuda@12.4.1 cuda_arch=90
+    - nccl@2.14.3 cuda_arch=90
+    - openmpi
+    - protobuf
+    - py-ase
+    - py-charset-normalizer
+    - py-ipdb
+    - py-lightning
+    - py-mpi4py
+    - py-numba
+    - py-numpy
+    - py-pandas
+    - py-pip
+    - py-pre-commit
+    - py-pytest
+    - py-requests
+    - py-ruamel-yaml
+    - py-setuptools
+    - py-spglib
+    - py-tensorboard
+    - py-torch+cuda+nccl
+    - py-torch-cluster
+    - py-torch-geometric
+    - py-torch-scatter
+    - py-torch-sparse
+    - py-torchmetrics
+    - py-trimesh
+    - py-xarray
+    - py-yacs
+    - python
+    - rdkit
+    - tmux
+    - unzip
+  view: true
+  concretizer:
+    unify: true
+  compilers:
+  - compiler:
+      spec: gcc@11.4.0
+      paths:
+        cc: /usr/bin/gcc
+        cxx: /usr/bin/g++
+        f77: /usr/bin/gfortran
+        fc: /usr/bin/gfortran
+      flags: {}
+      operating_system: linux-ubuntu22.04
+      target: x86_64
+      modules: []
+      environment: {}
+      extra_rpaths: []

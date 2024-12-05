@@ -1,0 +1,11 @@
+/conf/
+/conf/*
+/conf/**
+
+/lib/
+/lib/*
+/lib/**
+
+/workspace/
+/workspace/*
+/workspace/**

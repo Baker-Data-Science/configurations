@@ -1,0 +1,13 @@
+workspace/data/*
+workspace/data/**
+
+workspace/out/*
+workspace/out/**
+
+**/__pycache__/*
+
+**/*.egg-info/*
+**/.git/
+**/.ipynb_checkpoints/*
+**/.pytest_cache/*
+**/.vscode/*

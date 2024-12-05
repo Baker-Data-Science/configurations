@@ -93,10 +93,9 @@ export CXX=/usr/bin/g++
 export FC=/usr/bin/gfortran
 export PATH=/home/justin/nsight-systems/bin:$PATH
 
-
-alias cdumds="cd ~/reproducibility-project/"
-alias cdcodec="cd ~/codec/"
-alias cdlib="cd ~/lib/"
-alias cdrsrch="cd ~/rsrch/"
+alias goumds="cd ~/UCLADS/"
+alias gocodec="cd ~/codec/"
+alias golib="cd ~/lib/"
+alias gorsrch="cd ~/rsrch/"
 
 . ~/spack/share/spack/setup-env.sh

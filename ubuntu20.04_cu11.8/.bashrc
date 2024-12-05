@@ -1,11 +1,11 @@
 export PATH="/opt/homebrew/bin/:$PATH"
 
-# ================
-# .BASHRC (MLBKRM)
-# ================
+# ============================
+# .BASHRC (Baker-Data-Science)
+# ============================
 
 # Formatting
-# =======
+# ==========
 # Interactive
 # ------------
 case $- in
@@ -92,7 +92,6 @@ export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
 export FC=/usr/bin/gfortran
 export PATH=/home/justin/nsight-systems/bin:$PATH
-
 
 alias goumds="cd ~/UCLADS/"
 alias gocodec="cd ~/codec/"

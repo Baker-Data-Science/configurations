@@ -1,0 +1,26 @@
+name: ml-cpu-py3.11-osx-arm64
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  # numerics & data
+  - numpy
+  - scipy
+  - pandas
+  - pyarrow
+  - matplotlib
+  - jupyterlab
+  - ipykernel
+  - scikit-learn
+  - tqdm
+  # pytorch (CPU on mac; MPS is available but we’ll treat it as CPU base)
+  - pytorch
+  - torchvision
+  - torchaudio
+  # tree/gbm (CPU)
+  - xgboost
+  - lightgbm
+  # lint/test (keep minimal in base)
+  - pytest
+  - pipx

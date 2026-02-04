@@ -22,7 +22,6 @@ spack:
   - py-tensorboard
   - py-lightning
   - py-torchmetrics
-  - py-charset-normalizer
   - py-huggingface-hub
   - py-yacs
   - py-ipdb
